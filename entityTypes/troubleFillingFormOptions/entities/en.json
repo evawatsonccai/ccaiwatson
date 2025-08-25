@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "Enter information in chat window",
+    "synonyms": [ "Enter information in chat window" ],
+    "languageCode": "en"
+  }, {
+    "value": "I don't have all the information",
+    "synonyms": [ "I don't have all the information" ],
+    "languageCode": "en"
+  }, {
+    "value": "I don't see a form",
+    "synonyms": [ "I don't see a form" ],
+    "languageCode": "en"
+  }, {
+    "value": "Try to get foundation account PIN reset with a different device",
+    "synonyms": [ "Try to get foundation account PIN reset with a different device" ],
+    "languageCode": "en"
+  } ]
+}

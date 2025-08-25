@@ -1,0 +1,32 @@
+{
+  "name": "c5719d8a-67d6-42a6-bfec-e41b6d4833be",
+  "displayName": "Troubleshooting my device",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I have a great tool for you to use for all your device support needs.\u003cbr\u003e\u003c/br\u003e\nClick \u003ca target=\"_blank\" href=\"https://www.att.com/device-support/selector/\"\u003ehere\u003c/a\u003e to select your device and get amazing help with hotspots, voicemail, how to back up and restore your device along with a complete users manual!  [MSG_LINE_BR~05000] Was this information helpful?$waSession.buttons.optionsYesNo" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Userchoice",
+    "name": "8f62ed0f-153c-49fa-83cd-26be5e82df81"
+  } ]
+}

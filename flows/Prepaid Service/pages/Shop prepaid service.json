@@ -1,0 +1,32 @@
+{
+  "name": "b1cd4e71-5f53-4db4-95f5-460e035945d9",
+  "displayName": "Shop prepaid service",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Click \u003ca href=\"https://www.att.com/buy/prepaid-phones/\"  target=\"_blank\"\u003e here \u003c/a\u003e to Shop prepaid service [MSG_LINE_BR~05000] Was this information helpful?$waSession.buttons.optionsYesNoAnotherQuestion" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Userchoice",
+    "name": "185d00c6-74f1-4500-b1c3-b12bae72e4b7"
+  } ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "0a595009-aea3-4292-b478-0854232703c4",
+  "displayName": "Change_Rate_Plan",
+  "parameters": [ {
+    "id": "comm_options",
+    "entityType": "@Comm_Options"
+  }, {
+    "id": "temperature",
+    "entityType": "@sys.temperature"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 34
+}

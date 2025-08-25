@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "Turning on my hotspot - Apple device",
+    "synonyms": [ "Turning on my hotspot - Apple device" ],
+    "languageCode": "en"
+  }, {
+    "value": "Turning on my hotspot - Android device",
+    "synonyms": [ "Turning on my hotspot - Android device" ],
+    "languageCode": "en"
+  }, {
+    "value": "Troubleshooting my device",
+    "synonyms": [ "Troubleshooting my device" ],
+    "languageCode": "en"
+  }, {
+    "value": "Seeing if my line has the option",
+    "synonyms": [ "Seeing if my line has the option" ],
+    "languageCode": "en"
+  } ]
+}

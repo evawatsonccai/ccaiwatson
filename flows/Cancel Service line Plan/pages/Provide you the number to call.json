@@ -1,0 +1,19 @@
+{
+  "name": "749adf7f-b15e-4e26-989f-00861d4413bd",
+  "displayName": "Provide you the number to call",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I’m sorry for any inconvenience. At the moment, our live support teams aren’t available to help with what you're asking.\u003cbr\u003e\u003c/br\u003e For help with a new purchase, please contact \u003cb\u003e855.328.9612\u003c/b\u003e.\u003cbr\u003e\u003c/br\u003e You can reach AT\u0026T support for mobility service at \u003cb\u003e800.331.0500\u003c/b\u003e.\u003cbr\u003e\u003c/br\u003eYou can reach AT\u0026T support for internet and other services at \u003cb\u003e800.247.2020\u003c/b\u003e.\u003cbr\u003e\u003c/br\u003eIf you need help because your phone can’t make calls, click \u003ca href=\"https://www.att.com/support/smallbusiness/wireless/\" target=\"_blank\"\u003ehere\u003c/a\u003e and log in to troubleshoot your actual device online. \u003cbr\u003e\u003c/br\u003e You can schedule a meeting with an AT\u0026T Business sales expert! Please click \u003ca href=\"https://att.chilipiper.com/concierge-router/link/c2c-form-fill\" target=\"_blank\"\u003ehere\u003c/a\u003e to choose your preferred time.\u003cbr\u003e\u003c/br\u003e Whenever you need help, feel free to come back and chat. I’m here. \u003cbr\u003e\u003c/br\u003eThank you for choosing AT\u0026T. Goodbye." ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "waFlags",
+      "value": "\"{\"endSession\":true}\""
+    } ]
+  }
+}

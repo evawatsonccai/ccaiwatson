@@ -1,0 +1,46 @@
+{
+  "name": "096cf7f0-9c2f-4187-b8fb-a12892eec8b6",
+  "displayName": "Cancel Service line Plan",
+  "transitionRoutes": [ {
+    "intent": "cancel_service_line_plan_feature",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "cancel_service_line_plan_feature",
+    "name": "53b15e5a-1961-4fba-83d6-cbd91835232c",
+    "description": "cancel_service_line_plan_feature"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d0ef6451-c3d1-44f6-8860-0226d9616a57"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0f493298-4a3c-451c-ad68-91b3b346886b"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "41b0c799-3c09-4b43-9804-d10788c04ddd",
+    "languageCode": "en"
+  } ]
+}

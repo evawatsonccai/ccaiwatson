@@ -1,0 +1,43 @@
+{
+  "entities": [ {
+    "value": "Check the status of my verification request",
+    "synonyms": [ "Check the status of my verification request" ],
+    "languageCode": "en"
+  }, {
+    "value": "Help with online registration/ log in",
+    "synonyms": [ "Help with online registration/ log in" ],
+    "languageCode": "en"
+  }, {
+    "value": "I am not a small business customers",
+    "synonyms": [ "I am not a small business customers" ],
+    "languageCode": "en"
+  }, {
+    "value": "I am not seeking help with my business mobility",
+    "synonyms": [ "I am not seeking help with my business mobility" ],
+    "languageCode": "en"
+  }, {
+    "value": "I don't know my username/password",
+    "synonyms": [ "I don't know my username/password" ],
+    "languageCode": "en"
+  }, {
+    "value": "I got what I needed",
+    "synonyms": [ "I got what I needed" ],
+    "languageCode": "en"
+  }, {
+    "value": "My status has been rejected, what next?",
+    "synonyms": [ "My status has been rejected, what next?" ],
+    "languageCode": "en"
+  }, {
+    "value": "Pay my bill without logging in",
+    "synonyms": [ "Pay my bill without logging in" ],
+    "languageCode": "en"
+  }, {
+    "value": "Where do I log in?",
+    "synonyms": [ "What portal do I log into", "Where do I log in" ],
+    "languageCode": "en"
+  }, {
+    "value": "What portal do I log into",
+    "synonyms": [ "What portal do I log into" ],
+    "languageCode": "en"
+  } ]
+}

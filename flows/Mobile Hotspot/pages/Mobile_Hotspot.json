@@ -1,0 +1,65 @@
+{
+  "name": "5adb5098-ac9d-4b11-bc13-710adc99d535",
+  "displayName": "Mobile_Hotspot",
+  "form": {
+    "parameters": [ {
+      "displayName": "userinput",
+      "required": true,
+      "entityType": "@Mobilehotspotoptions",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I can help you with that! Do you need help with: \u003cbr\u003e\u003c/br\u003e\u003cdiv\u003e\u003cul\u003e\u003cbr\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"Turning on my hotspot - Apple device\"\u003eTurning on my hotspot - Apple device\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"Turning on my hotspot - Andriod device\"\u003eTurning on my hotspot - Andriod device\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"Seeing if my line has the option\"\u003eSeeing if my line has the option\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"Troubleshooting my device\"\u003eTroubleshooting my device\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.userinput = \"Turning on my hotspot - Apple device\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "Mobilehotspotoptions",
+        "value": "Turning on my hotspot - Apple device"
+      } ]
+    },
+    "targetPage": "Turning on my hotspot - Apple device",
+    "name": "16bea6f4-fa50-46ad-bd78-8f54c0c8d737"
+  }, {
+    "condition": "$session.params.userinput = \"Turning on my hotspot - Android device\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "Mobilehotspotoptions",
+        "value": "Turning on my hotspot - Android device"
+      } ]
+    },
+    "targetPage": "Turning on my hotspot - Android device",
+    "name": "953ec8fb-195e-47be-b3d6-5f3e21d23ff9"
+  }, {
+    "condition": "$session.params.userinput = \"Troubleshooting my device\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "Mobilehotspotoptions",
+        "value": "Troubleshooting my device"
+      } ]
+    },
+    "targetPage": "Troubleshooting my device",
+    "name": "38eb4452-c97e-4aa2-baa9-f5fc7c89aa2e"
+  }, {
+    "condition": "$session.params.userinput = \"Seeing if my line has the option\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": " Parameters are values extracted from the end user during the conversation. Learn more userinput Display name * Can contain letters, numbers, underscores and dashes. Must start with a letter. Select available system(opens in a new tab) or custom(opens in a new tab) entity type.",
+        "value": "Seeing if my line has the option"
+      } ]
+    },
+    "targetPage": "Seeing if my line has the option",
+    "name": "295f93eb-b3ab-41bd-9872-4cd1b6a51fe4"
+  } ]
+}

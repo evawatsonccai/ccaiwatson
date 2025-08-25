@@ -1,0 +1,18 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Hello",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Welcome",
+      "parameterId": "data_pass_strings",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

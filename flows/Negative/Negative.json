@@ -1,0 +1,45 @@
+{
+  "name": "b9ca50c3-61db-48b2-840a-b342168a9f86",
+  "displayName": "Negative",
+  "transitionRoutes": [ {
+    "intent": "Bot_Control_Reject_Response",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Negative flow",
+    "name": "cf5071bd-0338-473e-bcf8-8af46c3f13b0"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2d874b48-5998-45dc-bd15-63a1c29f5601"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d9653177-9d33-4a8f-8fb7-6b2889af3110"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "a040e7a4-7587-40f3-82b1-a9a9e03618d9",
+    "languageCode": "en"
+  } ]
+}

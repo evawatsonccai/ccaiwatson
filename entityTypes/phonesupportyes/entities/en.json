@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "Provide you the number to call",
+    "synonyms": [ "Provide you the number to call" ],
+    "languageCode": "en"
+  }, {
+    "value": "Transfer to a Live Agent",
+    "synonyms": [ "Transfer to a Live Agent" ],
+    "languageCode": "en"
+  }, {
+    "value": "Get phone support number",
+    "synonyms": [ "Get phone support number" ],
+    "languageCode": "en"
+  } ]
+}

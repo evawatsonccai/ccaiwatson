@@ -1,0 +1,21 @@
+{
+  "name": "b7e68e56-5276-4011-8178-4ce1f6f86c9f",
+  "displayName": "Welcome",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Welcome to Eva" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "waflags",
+      "value": {
+        "updateReporting": true
+      }
+    } ]
+  }
+}

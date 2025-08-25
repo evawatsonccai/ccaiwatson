@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "BAN",
+    "synonyms": [ "BAN" ],
+    "languageCode": "en"
+  }, {
+    "value": "BAN_Word",
+    "synonyms": [ "BAN_Word" ],
+    "languageCode": "en"
+  } ]
+}

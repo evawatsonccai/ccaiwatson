@@ -1,0 +1,32 @@
+{
+  "name": "f5141fb1-6816-42e8-a7d9-880f2b768354",
+  "displayName": "Turning on my hotspot - Apple device",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Follow these steps and you got it! \n1. Got to your device \u003cb\u003eSettings\u003c/b\u003e\n2. Select Cellular Data, then \u003cb\u003ePersonal Hotspot\u003c/b\u003e \n3. Turn on your hotspot  [MSG_LINE_BR~05000] Was this information helpful?$waSession.buttons.optionsYesNo" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Userchoice",
+    "name": "001001e1-8e6d-4224-9586-82e8ecacd07e"
+  } ]
+}

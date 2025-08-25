@@ -1,0 +1,32 @@
+{
+  "name": "57cf6a9e-f686-4aad-bad6-91fa0c6b9922",
+  "displayName": "Turning on my hotspot - Android device",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Follow these steps and you got it! \n1. Go to your device \u003cb\u003eSettings\u003c/b\u003e \n2. Select \u003cb\u003eConnections\u003c/b\u003e, or \u003cb\u003eNetworks\u003c/b\u003e\n3. Choose \u003cb\u003eMobile Hotspot and Tethering\u003c/b\u003e\n4. Turn on your hotspot \n [MSG_LINE_BR~05000] Was this information helpful?$waSession.buttons.optionsYesNo" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Userchoice",
+    "name": "0d539be4-1be9-409e-8f69-0bf267bb450b"
+  } ]
+}

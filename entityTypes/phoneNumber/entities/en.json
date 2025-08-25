@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "Phone Number",
+    "synonyms": [ "Phone Number" ],
+    "languageCode": "en"
+  }, {
+    "value": "Phone Number with Characters",
+    "synonyms": [ "Phone Number with Characters" ],
+    "languageCode": "en"
+  } ]
+}

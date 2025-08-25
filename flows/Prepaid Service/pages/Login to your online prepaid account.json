@@ -1,0 +1,36 @@
+{
+  "name": "2cceae83-ef3c-41a3-87b5-a703f5bf80bb",
+  "displayName": "Login to your online prepaid account",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Click \u003ca href=\"https://www.paygonline.com/websc/loginPage.html\"  target=\"_blank\"\u003e here \u003c/a\u003e to login to your online prepaid account [MSG_LINE_BR~05000] Was this information helpful?$waSession.buttons.optionsYesNoAnotherQuestion" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "waflags",
+      "value": "{\"callloginapi\":True}"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Userchoice",
+    "name": "5cb170b8-0ee1-4bc6-9957-710fa6fae028"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "order status",
+    "synonyms": [ "order status" ],
+    "languageCode": "en"
+  }, {
+    "value": "pre order",
+    "synonyms": [ "pre order" ],
+    "languageCode": "en"
+  } ]
+}

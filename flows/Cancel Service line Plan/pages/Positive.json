@@ -1,0 +1,15 @@
+{
+  "name": "15acb0aa-779e-452f-a9e6-8c8b8bb43166",
+  "displayName": "Positive",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I'm glad that I could help you today. \u003cbr\u003e\u003c/br\u003eIf you're a new customer or want to know how you can get things done, you can find answers to many questions \u003ca href=\"https://www.att.com/support/smallbusiness/\"\u003ehere\u003c/a\u003e\u003cbr\u003e\u003c/br\u003eThank you for choosing AT\u0026T. Goodbye." ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

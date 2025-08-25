@@ -1,0 +1,32 @@
+{
+  "name": "fa1b6b34-342c-4fcc-b57d-6e74e5d4db7c",
+  "displayName": " Get prepaid balance",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "No problem! Simply Dial *777# from your AT\u0026T Prepaid phone to get a text message with your balances. The text will give you your account balance and other account details like your data balance and package info.[MSG_LINE_BR~05000] Was this information helpful?$waSession.buttons.optionsYesNoAnotherQuestion" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Userchoice",
+    "name": "78d2dbd8-b45f-458d-aa7e-5b77b0444dad"
+  } ]
+}

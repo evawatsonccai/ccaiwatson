@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "Go to my account online",
+    "synonyms": [ "Go to my account online" ],
+    "languageCode": "en"
+  }, {
+    "value": "I need help with a different product",
+    "synonyms": [ "I need help with a different product" ],
+    "languageCode": "en"
+  }, {
+    "value": "Learn about FAN PINs",
+    "synonyms": [ "Learn about FAN PINs" ],
+    "languageCode": "en"
+  }, {
+    "value": "Pay my Bill",
+    "synonyms": [ "Pay my Bill" ],
+    "languageCode": "en"
+  }, {
+    "value": "Reset my FAN PIN",
+    "synonyms": [ "Reset my FAN PIN" ],
+    "languageCode": "en"
+  }, {
+    "value": "What is my Balance Due?",
+    "synonyms": [ "What is my Balance Due?" ],
+    "languageCode": "en"
+  } ]
+}

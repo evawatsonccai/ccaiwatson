@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "Get Support number",
+    "synonyms": [ "Get Support number" ],
+    "languageCode": "en"
+  }, {
+    "value": "Open Account Verification form",
+    "synonyms": [ "Open Account Verification form" ],
+    "languageCode": "en"
+  }, {
+    "value": "Reopen the form",
+    "synonyms": [ "Reopen the form" ],
+    "languageCode": "en"
+  }, {
+    "value": "Restart the process",
+    "synonyms": [ "Restart the process" ],
+    "languageCode": "en"
+  } ]
+}

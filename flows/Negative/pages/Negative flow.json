@@ -1,0 +1,74 @@
+{
+  "name": "00833c76-a6fc-4513-a90d-0a0848e92b76",
+  "displayName": "Negative flow",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I’m sorry to hear that. Unfortunately, our live agents aren't available over chat to help with what you're asking.\u003cbr\u003e\u003c/br\u003eYou can either log in to your account, then chat again to reach a live agent, or call us.\u003cbr\u003e\u003c/br\u003eWould you like their number?$waSession.buttons.optionsYesNo" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "WaReporting",
+      "value": {
+        "chatSurveyFeedback": "Negative"
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Bot_Control_Reject_Response",
+    "condition": "$intent.params.Userchoice = \"No\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I’m sorry again we weren’t able to process your payment. Thank you for choosing AT\u0026T. Goodbye." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "waFlags",
+        "value": {
+          "endSession": true
+        }
+      } ]
+    },
+    "name": "4d50707e-6cac-4ed2-b963-8ff1d5ab2f6b",
+    "description": "No"
+  }, {
+    "intent": "Bot_Control_Approve_Response",
+    "condition": "$session.params.Userchoice = \"Yes\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for your feedback, and thank you for your patience. Please call Support at \u003cb\u003e800.331.0500\u003c/b\u003e.\u003cbr\u003e\u003c/br\u003eFor help with a new purchase, please contact \u003cb\u003e855.328.9612\u003c/b\u003e.\u003cbr\u003e\u003c/br\u003eIf you need help because your phone can’t make calls, click \u003ca href=\"https://www.att.com/support/smallbusiness/wireless/\" target=\"_blank\"\u003ehere\u003c/a\u003e and log in to troubleshoot your actual device online.\u003cbr\u003e\u003c/br\u003e  You can schedule a meeting with an AT\u0026T Business sales expert! Please click \u003ca href=\"https://att.chilipiper.com/concierge-router/link/c2c-form-fill\" target=\"_blank\"\u003ehere\u003c/a\u003e to choose your preferred time.\u003cbr\u003e\u003c/br\u003e Whenever you need help, feel free to come back and chat. I’m here 24/7.\u003cbr\u003e\u003c/br\u003eThank you for choosing AT\u0026T. Goodbye." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "waFlags",
+        "value": {
+          "endSession": true
+        }
+      }, {
+        "parameter": "waReporting",
+        "value": {
+          "transferToPhoneAgent": true
+        }
+      } ]
+    },
+    "name": "8840956b-241e-4a96-b82f-adf118ce1221",
+    "description": "Yes"
+  } ]
+}

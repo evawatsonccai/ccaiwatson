@@ -1,0 +1,32 @@
+{
+  "name": "2c009215-841a-4376-87aa-c5fb1b95ff75",
+  "displayName": "Change Rate Plan",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I can help you with that! \n\u003cbr\u003e\u003c/br\u003e1.In the \u003cb\u003eI want to:\u003c/b\u003e drop down, select \u003cb\u003eChange Rate Plan\u003c/b\u003e option. Be sure to enter the ten digit number then select \u003cb\u003eGo\u003c/b\u003e. \n\u003cbr\u003e\u003c/br\u003e2.You will go to the \u003cb\u003eChange Rate Plan screen\u003c/b\u003e where you can see all the available options and select the desired one.\n\u003cbr\u003e\u003c/br\u003e3.To get more information on each plan, simply click on the \u003cb\u003ePlan Details\u003c/b\u003e link to see a pop up of all information. That's it - you got it! \u003cbr\u003e\u003c/br\u003e[MSG_LINE_BR~05000] Was this information helpful?$waSession.buttons.optionsYesNo" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "True",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Userchoice",
+    "name": "cefae73a-6bbc-4f7d-b8ed-3d4b4d25a3e0"
+  } ]
+}

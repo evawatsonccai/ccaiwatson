@@ -1,0 +1,34 @@
+{
+  "name": "55d2c204-ffe3-4c48-a81e-22ae545d550a",
+  "displayName": "Userchoice",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.Userchoice = \"Yes\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Positive",
+    "name": "fb3ed992-afd1-4225-bfdd-f3983d75caba"
+  }, {
+    "condition": "$session.params.Userchoice = \"No\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Negative",
+    "name": "ab44eed0-ef57-467a-9f90-9a27c3a2718b"
+  } ]
+}

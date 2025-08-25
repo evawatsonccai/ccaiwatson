@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Device Support while traveling",
+    "synonyms": [ "Device Support while traveling" ],
+    "languageCode": "en"
+  }, {
+    "value": "I got what i needed",
+    "synonyms": [ "I got what i needed" ],
+    "languageCode": "en"
+  }, {
+    "value": "Packages, Pricing and Features",
+    "synonyms": [ "Packages, Pricing and Features" ],
+    "languageCode": "en"
+  }, {
+    "value": "View my international data or call usage and charges",
+    "synonyms": [ "View my international data or call usage and charges" ],
+    "languageCode": "en"
+  }, {
+    "value": "View/Update my current plan for international features",
+    "synonyms": [ "View/Update my current plan for international features" ],
+    "languageCode": "en"
+  } ]
+}

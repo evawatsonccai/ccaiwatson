@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "FirstNet: unknown user",
+    "synonyms": [ "FirstNet: unknown user" ],
+    "languageCode": "en"
+  }, {
+    "value": "halooidc=false",
+    "synonyms": [ "halooidc=false" ],
+    "languageCode": "en"
+  }, {
+    "value": "halooidc=true",
+    "synonyms": [ "halooidc=true" ],
+    "languageCode": "en"
+  } ]
+}

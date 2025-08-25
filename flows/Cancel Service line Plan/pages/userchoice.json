@@ -1,0 +1,37 @@
+{
+  "name": "e254c374-92da-4ce5-99a3-3433498f7dc7",
+  "displayName": "userchoice",
+  "form": {
+    "parameters": [ {
+      "displayName": "userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.userchoice = \"No\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Negative",
+    "name": "256600c4-ff63-4553-a7d3-c622ca89ce64"
+  }, {
+    "condition": "$session.params.userchoice = \"Yes\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Positive",
+    "name": "276af60d-e5e1-4a57-bb21-bb0408f4b7b2"
+  }, {
+    "condition": "$session.params.userchoice = \"I have another question\"",
+    "triggerFulfillment": {
+    
+    },
+    "name": "9e3a1f8f-dd48-4139-ab46-01a59ffdf1bd"
+  } ]
+}

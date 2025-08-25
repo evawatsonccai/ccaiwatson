@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "Bank Account",
+    "synonyms": [ "Bank Account" ],
+    "languageCode": "en"
+  }, {
+    "value": "Debit/Credit Card",
+    "synonyms": [ "Debit/Credit Card" ],
+    "languageCode": "en"
+  } ]
+}

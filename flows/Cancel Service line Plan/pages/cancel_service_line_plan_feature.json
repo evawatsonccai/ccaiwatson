@@ -1,0 +1,53 @@
+{
+  "name": "6203ce30-670d-432b-8c98-47fffd2996a2",
+  "displayName": "cancel_service_line_plan_feature",
+  "form": {
+    "parameters": [ {
+      "displayName": "userinput",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You may have the ability to cancel your service after logging into your online account. You may speak to a live chat agent only after log in. Otherwise, you can contact us via phone. What can I help you with next: \u003cbr\u003e\u003cdiv\u003e\u003cul\u003e\u003cbr\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"What portal do I log into?\"\u003eWhat portal do I log into?  \u003c/a\u003e\u003c/li\u003e\u003cbr\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"Get phone support number\"\u003eGet phone support number \u003c/a\u003e\u003c/li\u003e\u003cbr\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"I have another question \"\u003eI have another question  \u003c/a\u003e\u003c/li\u003e\u003cbr\u003e\u003c/ul\u003e\u003c/div\u003e" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.userinput = \"What portal do I log into\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Where do I log in ?",
+    "name": "0d7d0f0c-2e48-4b67-b8d7-c7084ae78c62"
+  }, {
+    "condition": "$session.params.userinput = \"I have another question\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "I have another question",
+    "name": "ee812042-e05e-4ae2-b1a9-118f40f18cce"
+  }, {
+    "condition": "$session.params.userinput = \"Get phone support number\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Provide you the number to call",
+    "name": "1d7d7ed0-c46a-46b4-9bae-7acdde62af61"
+  }, {
+    "condition": "$session.params.userinput != \"What portal do I log into\" AND $session.params.userinput != \"I have another question\" AND $session.params.userinput != \"Get phone support number\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Start Page",
+    "name": "7526b79c-3a39-413a-a88e-7f7523e7e606"
+  } ]
+}

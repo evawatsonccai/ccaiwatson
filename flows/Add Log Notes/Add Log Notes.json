@@ -1,0 +1,50 @@
+{
+  "name": "0afec81d-5628-40ab-8710-16d9a0117085",
+  "displayName": "Add Log Notes",
+  "transitionRoutes": [ {
+    "intent": "#add_notes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Would you like to add comments to $waInput.ticketNumber?\r\n\u003cdiv\u003e\u003cul\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"Yes\"\u003eYes\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"No\"\u003eNo\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "3defde01-bd7a-4e7f-99a1-cd9d6d7e0990",
+    "description": "Add Log Notes"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ff663c16-140a-4cdf-b8c1-3910ec0f5677"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "285b2bc5-7df7-4170-addd-977b45fbe907"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "ece7d942-916f-417c-81f2-31c08deec139",
+    "languageCode": "en"
+  } ]
+}

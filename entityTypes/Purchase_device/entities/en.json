@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Get link",
+    "synonyms": [ "Get link" ],
+    "languageCode": "en"
+  }, {
+    "value": "Get prepaid balance",
+    "synonyms": [ "Get prepaid balance" ],
+    "languageCode": "en"
+  }, {
+    "value": "Login to your online prepaid account",
+    "synonyms": [ "Login to your online prepaid account" ],
+    "languageCode": "en"
+  }, {
+    "value": "Scan QR code",
+    "synonyms": [ "Scan QR code" ],
+    "languageCode": "en"
+  }, {
+    "value": "Shop prepaid service",
+    "synonyms": [ "Shop prepaid service" ],
+    "languageCode": "en"
+  } ]
+}

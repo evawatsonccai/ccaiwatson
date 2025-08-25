@@ -1,0 +1,97 @@
+{
+  "name": "621ca480-f347-489f-8e47-3aef3f763d20",
+  "displayName": "Prepaid Service",
+  "transitionRoutes": [ {
+    "intent": "prepaid",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Prepaid",
+    "name": "b0a6c13d-e918-4cdb-a6ca-1287d551ec85",
+    "description": "Prepaid Service"
+  }, {
+    "intent": "Welcome",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Welcome",
+    "name": "9165673c-8069-4f1d-bcb2-33bc8b32bae6",
+    "description": "Welcome"
+  }, {
+    "intent": "Change_Rate_Plan",
+    "condition": "$session.params.businessRule = ExpressTicketing",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome to At\u0026T ExpressTicketing" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1a06b4bb-25b9-4317-868a-b7975cee9b6a"
+  }, {
+    "intent": "Change_Rate_Plan",
+    "condition": "$session.params.businessRule = HSIA",
+    "triggerFulfillment": {
+      "messages": [ {
+        "payload": {
+          "fulfillment_response": {
+            "messages": [ {
+              "text": {
+                "text": [ "First message" ]
+              }
+            }, {
+              "payload": {
+                "messageBreak": 5000
+              }
+            }, {
+              "text": {
+                "text": [ "Second message after 5 sec" ]
+              }
+            } ]
+          }
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0de53255-fee0-4ae6-bc3a-7fd6949c9208"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5210d5bc-f52a-40fe-b53a-5155ec85134c"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0fe6416f-9a90-4a56-b585-516694eee7ba"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "986491cb-c321-4503-82f0-b916cb73b740",
+    "languageCode": "en"
+  } ]
+}

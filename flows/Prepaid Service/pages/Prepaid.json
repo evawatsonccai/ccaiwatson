@@ -1,0 +1,77 @@
+{
+  "name": "efaa9a28-f070-4f45-a876-42750591fb46",
+  "displayName": "Prepaid",
+  "form": {
+    "parameters": [ {
+      "displayName": "userinput",
+      "required": true,
+      "entityType": "@Purchase_device",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I can help you with that! Unfortunately, the portal you are on now is not the right place to be for prepaid. Here are the most helpful topics I have for you: \u003cbr\u003e\u003cdiv\u003e\u003cul\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"Login to your online prepaid account\"\u003eLogin to your online prepaid account \u003c/a\u003e\u003c/li\u003e\u003cbr\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"Shop prepaid service\"\u003eShop prepaid service \u003c/a\u003e\u003c/li\u003e\u003cbr\u003e\u003cli\u003e\u003ca href=\"#\" role=\"button\" data-nuance-message-text=\"Get prepaid balance\"\u003eGet prepaid balance \u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "waflags",
+      "value": "{\"callprepaid\":True}"
+    }, {
+      "parameter": "waSession",
+      "value": {
+        "CurrentIntent": "Prepaid"
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.userinput = \"Get prepaid balance\"",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "Purchase_device",
+        "value": "Get prepaid balance"
+      } ]
+    },
+    "targetPage": " Get prepaid balance",
+    "name": "26ce677b-11b8-4f60-9b6e-395c9bc9edac"
+  }, {
+    "condition": "$session.params.userinput = \"Login to your online prepaid account\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Login to your online prepaid account",
+    "name": "bff20495-7581-4db5-8d00-7a65a040fc62"
+  }, {
+    "condition": "$session.params.userinput = \"Shop prepaid service\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Shop prepaid service",
+    "name": "1cb5f602-d2f1-4afd-87c7-a120c1908b14"
+  }, {
+    "condition": "$intent.params.HSIA = 200",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Userchoice",
+    "name": "bc4498e5-08ea-48a3-a831-3bb52d37c9d1"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "try something" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "66ed6988-43d5-49ca-8677-8e3c1bd8e01e"
+  } ]
+}

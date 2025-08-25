@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "I have another question",
+    "synonyms": [ "I have another question" ],
+    "languageCode": "en"
+  }, {
+    "value": "I need something else",
+    "synonyms": [ "I need something else" ],
+    "languageCode": "en"
+  } ]
+}

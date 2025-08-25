@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "Get Prepaid support",
+    "synonyms": [ "Get Prepaid support" ],
+    "languageCode": "en"
+  }, {
+    "value": "See your balance or pay a bill without signing in",
+    "synonyms": [ "See your balance or pay a bill without signing in" ],
+    "languageCode": "en"
+  }, {
+    "value": "Which account do I sign in to?",
+    "synonyms": [ "Which account do I sign in to?" ],
+    "languageCode": "en"
+  } ]
+}

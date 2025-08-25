@@ -1,0 +1,10 @@
+{
+  "name": "c120da64-17c5-4921-82fc-bbfd47da43fc",
+  "displayName": "Welcome",
+  "parameters": [ {
+    "id": "data_pass_strings",
+    "entityType": "@data_pass_strings"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 2
+}

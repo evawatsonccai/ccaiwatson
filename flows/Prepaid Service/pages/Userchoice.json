@@ -1,0 +1,52 @@
+{
+  "name": "31d02e12-a8e0-4eac-93b3-6f4eff25750a",
+  "displayName": "Userchoice",
+  "form": {
+    "parameters": [ {
+      "displayName": "Userchoice",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.Userchoice = \"No\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Negative",
+    "name": "fd739479-f294-44e0-9030-29e5a56101d2",
+    "description": "No"
+  }, {
+    "condition": "$session.params.Userchoice = \"Yes\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Glad we could help. When you need us, just ask, anytime. Thank you for choosing AT\u0026T. Goodbye." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "Wasession",
+        "value": "{\"endSession\":True,\"updateReporting\":True}"
+      } ]
+    },
+    "name": "3e2791c0-a225-4abb-a35c-272c6ce377c7",
+    "description": "Yes"
+  }, {
+    "condition": "$session.params.Userchoice = \"I have another question\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What else can I help with?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5448e02e-4c01-43db-9487-8af75dcd9340"
+  } ]
+}

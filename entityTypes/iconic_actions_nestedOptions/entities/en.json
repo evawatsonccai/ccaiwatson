@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "check order status",
+    "synonyms": [ "check order status" ],
+    "languageCode": "en"
+  }, {
+    "value": "Get support number",
+    "synonyms": [ "Get support number" ],
+    "languageCode": "en"
+  } ]
+}
