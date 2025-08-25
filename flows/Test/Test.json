@@ -1,26 +1,13 @@
 {
-  "name": "00000000-0000-0000-0000-000000000000",
-  "displayName": "Default Start Flow",
-  "description": "A start flow created along with the agent",
+  "name": "c043f5f9-6bf2-4bd8-9f02-c556a513cc3d",
+  "displayName": "Test",
   "transitionRoutes": [ {
-    "intent": "Default Welcome Intent",
-    "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Hi! How are you doing?", "Hello! How can I help you?", "Good day! What can I do for you today?", "Greetings! How can I assist?" ]
-        },
-        "languageCode": "en"
-      } ]
-    },
-    "name": "fcca8d1b-c30c-47fd-92fe-aacba1b16339"
-  }, {
     "intent": "Bot_Control_Approve_Response",
-    "condition": "true",
     "triggerFulfillment": {
     
     },
     "targetPage": "Display",
-    "name": "1cadc064-4112-43e7-accc-d0f840289611"
+    "name": "11f1d6fe-ec88-47b4-9e00-974a0dc93b62"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -32,7 +19,7 @@
         "languageCode": "en"
       } ]
     },
-    "name": "3b489ca7-0a0c-4e82-84ba-d6898a2cfc2a"
+    "name": "355414e9-b779-4ef6-84f0-09151f015e42"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -43,7 +30,7 @@
         "languageCode": "en"
       } ]
     },
-    "name": "fe794961-d0a4-42ad-bc20-e76af8b9912f"
+    "name": "0d6cfe7a-a0f5-47fd-afde-8045a637e7da"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
@@ -52,7 +39,7 @@
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "customConfigKey": "814cac4c-8e08-4bab-a77c-68d1deabbe4b",
+    "customConfigKey": "d1f76eb5-e2b2-4fc2-a743-0359d468c675",
     "languageCode": "en"
   } ]
 }
